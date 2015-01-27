@@ -14,12 +14,6 @@ This application requires:
 - PHP >= 5.4
 - Composer
 - Npm
-- Gulp
-- Compass
-- CoffeeScript
-- jQuery
-- Materialize
-- Bootstrap
 
 Getting Started
 ---------------
@@ -49,7 +43,7 @@ Enjoy !
 Credits
 -------
 
-Author : [Robin Chalas](http://www.chalasdev.fr/) 2015
+Author : [Robin Chalas](http://www.chalasdev.fr/)
 
 License
 -------
