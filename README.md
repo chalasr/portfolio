@@ -24,9 +24,8 @@ This application requires:
 Getting Started
 ---------------
 
-```ruby
-
 - Install vendor using composer :
+
  ```composer install```
 
 - Create database :
@@ -40,8 +39,6 @@ Getting Started
 
 - Enjoy !
 
-
-```
 Credits
 -------
 
