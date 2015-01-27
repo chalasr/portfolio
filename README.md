@@ -24,7 +24,7 @@ This application requires:
 Getting Started
 ---------------
 
-- Install vendor using composer :
+ Install vendor using composer :
 
  ```composer install```
 
