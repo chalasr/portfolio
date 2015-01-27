@@ -29,12 +29,15 @@ Getting Started
  ```composer install```
 
 - Create database :
+
 ```doctrine:database:create```
 
 - Create schema of database :
+
 ```doctrine:schema:create```
 
 - Start server :
+
 ```php app/console server:run```
 
 - Enjoy !
