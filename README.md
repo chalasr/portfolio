@@ -2,11 +2,11 @@ My Developer Portfolio web app made with Symfony 2.3
 ================
 
 This application was created by Robin CHALAS - FullStack Web Developer -  http://www.chalasdev.fr/
---------------
 
 Problems? Issues?
+--------------
+
 Contact me on chalasdev.fr
--------------
 
 This application requires:
 -------------
