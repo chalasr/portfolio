@@ -6,14 +6,14 @@ This application was created by Robin CHALAS - FullStack Web Developer -  http:/
 Problems? Issues?
 --------------
 
-Contact me on chalasdev.fr
+Write a message on chalasdev.fr or create an issue
 
 This application requires:
 -------------
 
-- PHP > 5.4
+- PHP >= 5.4
 - Composer
-- NPM
+- Npm
 - Gulp
 - Compass
 - CoffeeScript
@@ -23,6 +23,10 @@ This application requires:
 
 Getting Started
 ---------------
+
+ - Clone this repository
+
+ ``` git clone https://github.com/chalasr/Symfony2_Portfolio.git ```
 
  - Install vendor using composer
 
@@ -50,5 +54,5 @@ Author : [Robin Chalas](http://www.chalasdev.fr/) 2015
 License
 -------
 
-[License MIT](http://opensource.org/licenses/MIT)
+[License GPL V3](http://opensource.org/licenses/GPL-3.0)
 Copyright (c) 2014-2015 [Robin Chalas](http://www.chaladev.fr/)
