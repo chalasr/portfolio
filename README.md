@@ -24,23 +24,23 @@ This application requires:
 Getting Started
 ---------------
 
- Install vendor using composer :
+ Install vendor using composer
 
- ```composer install```
+ ``` composer install ```
 
-- Create database :
+ Create database
 
-```doctrine:database:create```
+``` doctrine:database:create ```
 
-- Create schema of database :
+ Create schema of database
 
-```doctrine:schema:create```
+``` doctrine:schema:create ```
 
-- Start server :
+ Start server
 
-```php app/console server:run```
+``` php app/console server:run ```
 
-- Enjoy !
+Enjoy !
 
 Credits
 -------
