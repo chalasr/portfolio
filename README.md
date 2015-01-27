@@ -30,15 +30,15 @@ Getting Started
 
  - Create database
 
-``` doctrine:database:create ```
+ ``` doctrine:database:create ```
 
  - Create schema of database
 
-``` doctrine:schema:create ```
+ ``` doctrine:schema:create ```
 
  - Start server
 
-``` php app/console server:run ```
+ ``` php app/console server:run ```
 
 Enjoy !
 
