@@ -1,27 +1,54 @@
-# C.V./Portfolio with Symfony 2.3 standard édition
-### Single-page app with Symfony fullstack framework and MySQL database.
-[TEST IT ! DEMO at www.chalasdev.altervista.org](http://www.chalasdev.altervista.org)
+My Developer Portfolio web app made with Symfony 2.3
+================
 
+This application was created by Robin CHALAS - FullStack Web Developer -  http://www.chalasdev.fr/
+--------------
 
-## Tools :
+Problems? Issues?
+Contact me on chalasdev.fr
+-------------
 
-```php
+This application requires:
+-------------
 
-use Symfony\Component\{
-    Symfony\Component\ORM\Doctrine;
-    FOS\UserBundle\FOSUserBundle;
-}
+- PHP > 5.4
+- Composer
+- NPM
+- Gulp
+- Compass
+- CoffeeScript
+- jQuery
+- Materialize
+- Bootstrap
 
-use 'Composer' for dependencies management,
-    'Gulp.JS' for tasks management,
-    'Compass' (.scss) for style,
-    'CoffeeScript' for write less code and better js,
-    'jQuery', 'Materializ-CSS' and 'BootStrap3' for front-end libraries;  
+Getting Started
+---------------
+
+```ruby
+
+- Install vendor using composer :
+ ```composer install```
+
+- Create database :
+```doctrine:database:create```
+
+- Create schema of database :
+```doctrine:schema:create```
+
+- Start server :
+```php app/console server:run```
+
+- Enjoy !
+
 
 ```
+Credits
+-------
 
-### Test my Sf2 Portfolio app' :
-- Import Symfony2 using composer : ```composer install```
-- Create database : ```doctrine:database:create```
-- Create schema of database : ```doctrine:schema:create```
-- Enjoy !
+Author : [Robin Chalas](http://www.chalasdev.fr/) 2015
+
+License
+-------
+
+[License MIT](http://opensource.org/licenses/MIT)
+Copyright (c) 2014-2015 [Robin Chalas](http://www.chaladev.fr/)
