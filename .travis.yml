@@ -6,4 +6,4 @@ php:
 before_script:
   - composer install
 
-script: phpunit -c app/
+script: phpunit --configuration $DB.phpunit.xml
