@@ -1,6 +1,6 @@
 Portfolio App - Made with Symfony 2.3 
 ================
-![License](http://img.shields.io/:license-gpl3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0.html)
+[![License](http://img.shields.io/:license-gpl3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0.html)
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/chalasr/Symfony2_Portfolio)
 This application was created by Robin CHALAS - FullStack Web Developer -  http://www.chalasdev.fr/
 
