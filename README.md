@@ -1,5 +1,7 @@
 Portfolio App - Made with Symfony 2.3 
 ================
+
+[![Join the chat at https://gitter.im/chalasr/Symfony2_Portfolio](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/chalasr/Symfony2_Portfolio?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![License](http://img.shields.io/:license-gpl3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0.html)
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/chalasr/Symfony2_Portfolio)
 
