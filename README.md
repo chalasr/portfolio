@@ -1,9 +1,9 @@
-Portfolio App - Made with Symfony 2.3 
+Portfolio App - Made with Symfony 2.3
 ================
 
-[![Join the chat at https://gitter.im/chalasr/Symfony2_Portfolio](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/chalasr/Symfony2_Portfolio?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![License](http://img.shields.io/:license-gpl3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0.html)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/4fbc5334-d1e5-4b41-bd3b-b749b18170c8/mini.png)](https://insight.sensiolabs.com/projects/4fbc5334-d1e5-4b41-bd3b-b749b18170c8)
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/chalasr/Symfony2_Portfolio)
+[![Join the chat at https://gitter.im/chalasr/Symfony2_Portfolio](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/chalasr/Symfony2_Portfolio?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 This application was created by Robin CHALAS - FullStack Web Developer -  http://www.chalasdev.fr/
 
@@ -52,5 +52,5 @@ Author : [Robin Chalas](http://www.chalasdev.fr/)
 License
 -------
 
-[License GPL V3](http://opensource.org/licenses/GPL-3.0)
+[License GPL V3](http://opensource.org/licenses/GPL-3.0) [![License](http://img.shields.io/:license-gpl3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0.html)
 Copyright (c) 2014-2015 [Robin Chalas](http://www.chaladev.fr/)
