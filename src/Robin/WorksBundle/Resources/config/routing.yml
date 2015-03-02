@@ -1,3 +1,0 @@
-robin_works_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: RobinWorksBundle:Default:index }
