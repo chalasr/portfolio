@@ -29,7 +29,7 @@ Getting Started
  - Install vendor using composer
 
  ``` composer install ```
-
+ 
  - Create database
 
  ``` doctrine:database:create ```
