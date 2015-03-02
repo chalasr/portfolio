@@ -3,7 +3,7 @@ Portfolio App - Made with Symfony 2.3
 
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/4fbc5334-d1e5-4b41-bd3b-b749b18170c8/mini.png)](https://insight.sensiolabs.com/projects/4fbc5334-d1e5-4b41-bd3b-b749b18170c8)
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/chalasr/Symfony2_Portfolio)
-[![Join the chat at https://gitter.im/chalasr/Symfony2_Portfolio](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/chalasr/Symfony2_Portfolio?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/chalasr/Symfony2_Portfolio/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/chalasr/Symfony2_Portfolio/?branch=master)
 
 This application was created by Robin CHALAS - FullStack Web Developer -  http://www.chalasdev.fr/
 
@@ -29,7 +29,7 @@ Getting Started
  - Install vendor using composer
 
  ``` composer install ```
- 
+
  - Create database
 
  ``` doctrine:database:create ```
