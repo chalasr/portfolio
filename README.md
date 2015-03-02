@@ -52,5 +52,4 @@ Author : [Robin Chalas](http://www.chalasdev.fr/)
 License
 -------
 
-[License GPL V3](http://opensource.org/licenses/GPL-3.0) [![License](http://img.shields.io/:license-gpl3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0.html)
-Copyright (c) 2014-2015 [Robin Chalas](http://www.chaladev.fr/)
+Copyright (c) 2014-2015 [Robin Chalas](http://www.chaladev.fr/) [![License](http://img.shields.io/:license-gpl3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0.html)
