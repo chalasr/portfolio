@@ -1,0 +1,7 @@
+parameters:
+#    portfolio.example.class: Robin\PortfolioBundle\Example
+
+services:
+#    portfolio.example:
+#        class: %portfolio.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

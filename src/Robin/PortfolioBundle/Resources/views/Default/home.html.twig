@@ -1,0 +1,416 @@
+{% extends 'PortfolioBundle:Layout:master.html.twig' %}
+{% block body %}
+<div class="menu menu-fixed">
+<h4 id="name-fixed">Robin Chalas</h4>
+<ul class="list-inline">
+  <li><a id="topanch-fixed" href="#top">Profil</a></li>
+  <li><a id="companch-fixed" href="#services">Services</a></li>
+  <li><a id="travanch-fixed" href="#portfolio">Travaux</a></li>
+  <li><a id="contanch-fixed" href="#contact">Contact</a></li>
+</ul>
+</div>
+<div class="container">
+<div class="head">
+  <div class="col-sm-4 col-md-4 user-details infohead">
+    <div class="user-image">
+      <img src="{{ asset('bundles/portfolio/img/BeFunky_yeuxverrt2.png') }}" alt="Robin CHALAS" title="Développeur web fullstack" class="img-circle imgprof">
+    </div>
+    <div class="user-info-block">
+      <div class="user-heading">
+        <h3>Robin Chalas</h3>
+        <a name="top" href="#"></a>
+        <span class="help-block">Développeur Web <b>Full Stack</b><br>Lyon, 69003</span>
+      </div>
+    </div>
+  </div>
+  <div class="page-header jumbotron greyhead">
+    <h1 id="timeline">&nbsp;</h1>
+    <div class="menu" id="menu">
+      <ul class="list-inline">
+        <li><a href="#top">Profil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Travaux</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<ul class="timeline">
+  <li id="profil">
+    <a name="profil" href="#"></a>
+    <div class="btn-floating btn-large waves-effect waves-light timeline-badge">
+      <span class="flaticon-career1"></span>
+    </div>
+    <div class="timeline-panel">
+      <div class="timeline-heading">
+        <h4 class="timeline-title">Profil</h4>
+        <p><small class="text-muted">Robin Chalas - 21 ans</small></p>
+      </div>
+      <div class="timeline-body">
+        <p>
+          Développeur Web <b>[ BACK &amp; FRONT ]</b><br>
+          69003 LYON - 104 Rue Baraban<br>
+          <b>Web@cadémie </b>- Epitech <br>
+          Permis B + Véhicule<br>
+          <a id="dlcv" href="{{ asset('bundles/portfolio/cv/cv.pdf') }}"> Mon C.V. au format PDF !</a>
+          <br><br>
+        </p>
+      </div>
+    </div>
+  </li>
+  <li class="timeline-inverted">
+    <div class="btn-floating btn-large waves-effect waves-light timeline-badge"><span class="flaticon-profile8"></span></div>
+    <div class="timeline-panel">
+      <div class="timeline-heading">
+        <h4 class="timeline-title">Parcours</h4>
+      </div>
+      <div class="timeline-body">
+        <p>
+          <b>P</b>assionné d'informatique depuis l'enfance, mes débuts dans le développement de sites web datent de 2007. <br>
+          <b>D</b>epuis, j'ai évolué à mon rythme, en <b>autodidacte</b>, tout en restant concentré sur l'enseignement général. <br>
+          <b>U</b>n jour, à force d'emplois éphémeres, je me suis rendu à la Mission Locale où on m'a parlé de la <b>Web@cadémie</b>, une formation pour 18-25 ans passionnées par le Web. <br>
+          J'ai passé mon entretien avec succès et j'ai emmenagé sur Lyon pour entamer ce <b>cursus de la 2ème chance</b>.<br>
+          <b>D</b>ésormais, je m'épanouis complètement dans cette formation où l'<b>autonomie</b> est maître mot. <br>
+        </p>
+      </div>
+    </div>
+  </li>
+  <li id="block3" >
+    <div class="btn-floating btn-large waves-effect waves-light timeline-badge"><span class="flaticon-programming2"></span></div>
+    <a name="competences" href="#"></a>
+    <div class="timeline-panel">
+      <div class="timeline-heading">
+        <h4 class="timeline-title">Métier</h4>
+      </div>
+      <div class="timeline-body">
+        <p>
+          <b>Développeur Full Stack</b>, je concrétise vos idées de A à Z.<br><br>
+          Orienté <b>Javascript</b>, je réalise des applications web intéractives, intuitives et optimisées. <br>
+          Des fonctionnalités puissantes et innovantes, en passant par un design complètement personnalisé. <br>
+          Votre site web symbolise votre image, celui ci doit donc être unique. <br>
+          Selon le besoin, j'utilise différentes technologies côté serveur (back-end), dont les frameworks PHP les plus puissants et réputés tels que <b>Laravel</b> et <b>Symfony</b>, ou bien une technologie Javascript telle que <b>NodeJS</b>, une plateforme contenant un serveur à part entière. <br>
+          <b>Côté client</b>, j'emploie le plus souvent <b>Angular.JS</b>, un framework Javascript créé par Google d'une puissance remarquable, permettant une intéractivité totale sur votre application; bien souvent combiné avec du <b>jQuery</b>, il permet d'alier <b>performances</b> et <b>allure</b> avec des animations hyper <b>fluides</b>.
+        </p>
+      </div>
+    </div>
+  </li>
+  <li class="timeline-inverted" id="block8">
+    <div class="btn-floating btn-large waves-effect waves-light timeline-badge"><span class="glyph-icon flaticon-responsive16"></span> </div>
+    <div class="timeline-panel">
+      <div class="timeline-heading">
+        <h4 class="timeline-title">Projets</h4>
+      </div>
+      <div class="timeline-body">
+        <p>
+          <b>Tous</b> mes projets sont conformes à la norme du <b>W3C</b>. <br>
+          Cette norme correspond aux derniers standards <b>HTML5</b> et <b>CSS3</b>. <br>
+          À la demande, je met en place un design <b>Responsive</b>.<br>
+          Soit un site web qui <b>s'adapte à la résolution du navigateur utilisé</b> , et donc à chaque appareil <b>(mobile, tablette, télévision ..)</b><br>
+          <b>Un projet web se doit d'être réutilisable et adaptable à l'infini.</b>
+        </p>
+      </div>
+    </div>
+  </li>
+</ul>
+<hr>
+
+<div id="services" class="row langages">
+  <a href="#" name="services"></a>
+  <div class="col-md-6">
+    <div class="blockquote-box clearfix angularsec">
+      <p class="angparaph desc">
+        <img src="{{ asset('bundles/portfolio/img/angularjs-grey2.png') }}" alt="Angular.JS" class="ang" title="Angular.JS"/><br>
+        C'est un outil parfaitement adapté pour réaliser des <b>Single Page App's</b>,<br>
+        À mon sens, la meilleure façon de concevoir un site web, de par sa fluidité. <br>
+        Le temps où chaque action effectuée sur un site web engendrait un rafraîchissement du navigateur est désormais <b>révolu</b>. <br> Les mots <b>intuitif</b> et <b>intéractif</b> prennent tout leur sens.
+      </p>
+    </div>
+    <div class="blockquote-box clearfix">
+      <div class="square pull-left">
+        <img src="{{ asset('bundles/portfolio/img/symfony.png') }}" class="symf" alt="symfonylogo" title="Symfony">
+      </div>
+      <h4>Symfony</h4>
+      <p>
+        Actuellement le framework PHP le plus utilisé sur le marché du web, de part ses ressources inépuisables et sa communauté impréssionnante.
+      </p>
+    </div>
+    <div class="blockquote-box clearfix">
+      <div class="square pull-left">
+        <img src="{{ asset('bundles/portfolio/img/jquery.png') }}" class="jquery" alt="jquerylogo" title="jQuery">
+      </div>
+      <h4>jQuery</h4>
+      <p>
+        Une librairie Javascript incluse dans chacun de mes projets,
+        tant son utilisation simplifie le code.
+      </p>
+    </div>
+    <div class="blockquote-box clearfix">
+      <div class="square pull-left">
+        <img src="{{ asset('bundles/portfolio/img/html.png') }}" class="html" alt="htmllogo" title="HTML5/CSS3">
+      </div>
+      <h4>HTML5 / CSS3</h4>
+      <p>
+        Indispensable à la réalisation de tout site web, il est important de respecter les derniers standards de ces deux langages.
+      </p>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="rightlogo blockquote-box blockquote-info clearfix nodeblock">
+      <p class="desc nodedesc">
+        <img src="{{ asset('bundles/portfolio/img/node-grey.png') }}" alt="Node.JS" class="ang" title="Node.JS"/> <br>
+        <b>NodeJS</b> est une plateforme Javascript qui possède son propre serveur de développement.<br>
+        Combiné avec les WebSockets et autres WebServices, il permet de réliser des <b>Real Time App's</b>, <br>
+        C'est la technologie la plus adaptée pour concevoir un chat en <b>temps réel</b>, par exemple.
+      </p>
+    </div>
+    <div class="blockquote-box clearfix rightlogo" id="laradiv">
+      <div class="square pull-right">
+        <img src="{{ asset('bundles/portfolio/img/laravel.png') }}" class="laravel" alt="htmllogo" title="HTML5/CSS3">
+      </div>
+      <h4 class="text-right">Laravel</h4>
+      <p>
+        Un framework PHP récent et très populaire que j'utilise très souvent pour sa simplicité d'utilisation et son éfficacité indiscutable. Sa côte n'arrête pas d'augmenter.
+      </p>
+    </div>
+    <div class="blockquote-box clearfix rightlogo">
+      <div class="square pull-right">
+        <img src="{{ asset('bundles/portfolio/img/compass.png') }}" class="yeoman" alt="yeologo">
+      </div>
+      <h4 class="text-right">Compass</h4>
+      <p>
+        Il y a peu j'utilisais le <b>CSS</b> de façon basique. J'ai découvert une utilisation bien plus optimisée des feuilles de style.
+      </p>
+    </div>
+    <div class="blockquote-box clearfix rightlogo">
+      <div class="square pull-right">
+        <img src="{{ asset('bundles/portfolio/img/gulp.png') }}" class="grunt" alt="yeologo">
+      </div>
+      <h4 class="text-right">&nbsp;&nbsp;Gulp</h4>
+      <p>
+        Un automatiseur de tâches pratique et rapide, j'ai découvert cet outil récemment et je ne m'en séparerais plus.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="right">
+  <ul>
+    <li><a id="topanch" href="#top">Profil</a></li>
+    <li><a id="companch" href="#services">Services</a></li>
+    <li><a id="travanch" href="#portfolio">Travaux</a></li>
+    <li><a id="contanch" href="#contact">Contact</a></li>
+  </ul>
+</div>
+<hr>
+<a href="#" name="portfolio"></a>
+<ul class="timeline">
+  <li>
+    <!-- <div class="btn-floating btn-large waves-effect waves-light timeline-badge" id="bubble1-folio"><span id="iclarav" class="devicons devicons-laravel"></span></div> -->
+    <div class="no-after timeline-panel work" id="cloudwac">
+      <div class="caption">
+        <div class="card">
+          <div class="card-content white-text">
+            <span class="card-title">CLOUDWAC</span>
+            <p>
+              I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.
+            </p>
+            <div class="btn-floating waves-effect waves-light technos grey">
+              <span class="devicons devicons-laravel"></span>
+            </div>
+            <div class="showprod">
+              <a target="_blank" href="https://github.com/chalasr/Laravel_Cloud" class="waves-effect waves-light btn showproj grey">Source</a>
+              <a target="_blank" href="http://cloud.chalasdev.fr/" class="waves-effect waves-light btn showproj grey">Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li class="timeline-inverted">
+    <div class="no-after timeline-panel work" id="freeads">
+      <div class="caption">
+        <div class="card">
+          <div class="card-content white-text">
+            <span class="card-title">FREE ADS</span>
+            <p>
+              I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.
+            </p>
+            <div class="btn-floating waves-effect waves-light technos grey">
+              <span class="devicons devicons-laravel"></span>
+            </div>
+            <div class="showprod">
+              <a target="_blank" href="http://github.com/chalasr/Laravel_FreeAds" class="waves-effect waves-light btn showproj grey">Source</a>
+              <a target="_blank" href="http://freeads.chalasdev.fr" class="waves-effect waves-light btn showproj grey">Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="no-after timeline-panel work" id="mymaps">
+      <div class="caption">
+        <div class="card">
+          <div class="card-content white-text">
+            <span class="card-title">MY MAPS</span>
+            <p>
+              I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.
+            </p>
+            <div class="btn-floating waves-effect waves-light technos grey">
+              <span class="devicons devicons-javascript"></span>
+            </div>
+            <div class="btn-floating waves-effect waves-light technos grey">
+              <span class="devicons devicons-chrome"></span>
+            </div>
+            <div class="showprod">
+              <a target="_blank" href="http://github.com/chalasr/Javascript_My_Maps" class="waves-effect waves-light btn showproj grey">Source</a>
+              <a target="_blank" href="http://maps.chalasdev.fr" class="waves-effect waves-light btn showproj grey">Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li class="timeline-inverted" id="block10">
+    <!-- <div class="btn-floating btn-large waves-effect waves-light timeline-badge" style="margin-top: -94px;"><span id="icjava" class="devicons devicons-javascript"></span></div> -->
+    <div class="no-after timeline-panel work" id="mypaint">
+      <div class="caption">
+        <div class="card">
+          <div class="card-content white-text">
+            <span class="card-title">MY PAINT</span>
+            <p>
+              I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.
+            </p>
+            <div class="btn-floating waves-effect waves-light technos grey">
+              <span class="devicons devicons-javascript"></span>
+            </div>
+            <div class="showprod">
+              <a target="_blank" href="http://github.com/chalasr/Javascript_My_Maps" class="waves-effect waves-light btn showproj grey">Source</a>
+              <a target="_blank" href="http://paint.chalasdev.fr" class="waves-effect waves-light btn showproj grey">Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li  >
+    <div class="no-after timeline-panel work" id="whacker">
+      <div class="caption">
+        <div class="card">
+          <div class="card-content white-text">
+            <span class="card-title">W'HACKER NET</span>
+            <p>
+              I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.
+            </p>
+            <div class="btn-floating waves-effect waves-light technos grey">
+              <span class="devicons devicons-laravel"></span>
+            </div>
+            <div class="btn-floating waves-effect waves-light technos grey">
+              <span class="devicons devicons-angular"></span>
+            </div>
+            <div class="showprod">
+              <a target="_blank" href="http://github.com/chalasr/Laravel_AngularJS_Forum" class="waves-effect waves-light btn showproj grey">Source</a>
+              <a target="_blank" href="http://forum.chalasdev.fr/" class="waves-effect waves-light btn showproj grey">Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li class="timeline-inverted" id="block4">
+    <!-- <div class="btn-floating btn-large waves-effect waves-light timeline-badge" style="margin-top: -94px;"><span id="icang" class="devicons devicons-angular"></span></div> -->
+    <div class="no-after timeline-panel work" id="ateliermac">
+      <div class="caption">
+        <div class="card">
+          <div class="card-content white-text">
+            <span class="card-title">L'ATELIER MAC</span>
+            <p>
+              I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.
+            </p>
+            <div class="btn-floating waves-effect waves-light technos grey">
+              <span class="devicons devicons-laravel"></span>
+            </div>
+            <div class="btn-floating waves-effect waves-light technos grey">
+              <span class="devicons devicons-angular"></span>
+            </div>
+            <div class="showprod">
+              <a target="_blank" href="http://github.com/chalasr/Laravel_AngularJS_LatelierMac" class="waves-effect waves-light btn showproj grey">Source</a>
+              <a target="_blank" href="http://www.lateliermac.com/" class="waves-effect waves-light btn showproj grey">Visiter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
+<hr>
+<div class="contact">
+  <a href="#" name="contact"></a>
+  <h3>CONTACT</h3>
+  <a href="#" name="contact"></a>
+  <div class="row">
+    <div class="col s12">
+      <div class="browser-window">
+        <div class='top-bar'>
+          <div class='circles'>
+            <div id="close-circle" class="circle"></div>
+            <div id="minimize-circle" class="circle"></div>
+            <div id="maximize-circle" class="circle"></div>
+          </div>
+        </div>
+        <div class="row">
+          <form class="col s12" method='POST'>
+            <div class="row">
+              <div class="divinput input-field col s6">
+                <input name="prenom" id="prenom" type="text" spellcheck="false" required>
+                <label for="prenom">Prenom</label>
+              </div>
+              <div class="divinput input-field col s6">
+                <input id="nom" type="text" spellcheck="false" required>
+                <label for="nom">Nom</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="divinput input-field col s12">
+                <input id="email" type="email" spellcheck="false" required>
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="divinput input-field col s10">
+                <textarea id="content" name="content" class="materialize-textarea" spellcheck="false" required></textarea>
+                <label for="content">Message</label>
+              </div>
+            </div>
+            <div class="row divinput sendbtn">
+              <button class="btn waves-effect waves-light" type="submit" name="action">Envoyer
+                <i class="mdi-content-send"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4  col-md-3 col-sm-6 col-xs-12 ">
+      <ul class="social">
+        <li> <a target="_blank" href="https://twitter.com/chalasdev"> <i class="fa fa-twitter"></i></a></li>
+        <li> <a target="_blank" href="https://github.com/chalasr"> <i class="fa fa-github-alt"></i></a></li>
+        <li> <a target="_blank" href="https://plus.google.com/u/0/118308500207772824373"> <i class="fa fa-google-plus"></i></a></li>
+        <li> <a target="_blank" href="https://www.linkedin.com/pub/robin-chalas/98/893/3a0"> <i class="fa fa-linkedin"></i></a></li>
+        <li> <a target="_blank" href="https://bitbucket.org/chalas_r"> <i class="fa fa-bitbucket"></i></a></li>
+        <li> <a target="_blank" href="http://stackoverflow.com/users/4363634/chalas-r"> <i class="fa fa-stack-overflow"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+<script type="text/javascript" src="{{ asset('bundles/portfolio/js/jquery.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/portfolio/js/script.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/portfolio/js/materialize.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/portfolio/js/jquery.hcaptions.js') }}"></script>
+{% endblock %}

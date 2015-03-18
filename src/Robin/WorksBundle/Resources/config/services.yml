@@ -1,0 +1,7 @@
+parameters:
+#    robin_works.example.class: Robin\WorksBundle\Example
+
+services:
+#    robin_works.example:
+#        class: %robin_works.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
