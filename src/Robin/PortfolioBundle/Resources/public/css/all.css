@@ -1667,3 +1667,22 @@ svg:hover path { cursor:pointer;fill: #9E9E9E !important;}
 @media (max-width:980px){ .technother{ margin-left: 18%;}}
 @media (max-width:760px){ .technother{ margin-left: 0%;}}
 @media (max-width:650px){.otherback, .otherfront{ display:none;}}
+footer {
+    bottom: 0;
+    width: 110%;
+    margin-left: 10%;
+    background-color: #F5F5F5;
+    padding: 25px 0;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0.6;
+    transition: opacity .2s ease;
+}
+footer:hover {
+    opacity: 1.2;
+    transition: opacity .2s ease;
+}
+footer p {
+    margin: 0;
+}
