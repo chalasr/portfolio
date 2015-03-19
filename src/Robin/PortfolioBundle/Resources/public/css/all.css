@@ -1616,7 +1616,7 @@ body{background: url('../img/site42-bg.gif');}
 .ang{height: 142px;width: 95%}
 #bubble1-folio{margin-top: 45px}
 @media only screen and (max-width: 992px) {.nodedesc{min-height: 200px !important;}}
-@media only screen and (max-width: 1199px) {.nodedesc{min-height: 320px;}}
+@media only screen and (max-width: 1199px) {.nodedesc{min-height: 280px;}}
 #iclarav {font-size: 53px;margin-left: -2px;}
 #icjava {font-size: 50px;margin-left: 0px;}
 #icang {font-size: 48px;margin-left: 0px;}
@@ -1664,3 +1664,5 @@ svg:hover path { cursor:pointer;fill: #9E9E9E !important;}
  .gulpsvg{margin-left: -11px;margin-right: -15px;}
 .worksh3{margin-bottom:-30px;}
 .envh3{  margin-top: -5px; margin-bottom: 25px;}
+@media (max-width:760px){ .technother{ margin-left: 0%;}}
+@media (max-width:650px){.otherback, .otherfront{ display:none;}}
