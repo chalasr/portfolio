@@ -61,6 +61,7 @@ select{background:#fff!important}
 *,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 html{font-size:62.5%;-webkit-tap-highlight-color:transparent}
 body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}
+body p{font-size: 18px !important;}
 button,input,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}
 a{color:#428bca;text-decoration:none}
 a:focus,a:hover{color:#2a6496;text-decoration:underline}
@@ -1538,7 +1539,7 @@ td.visible-print,th.visible-print{display:table-cell!important}}
 #block10{margin-top:-211px}
 #block9{margin-top:-211px}
 #block5{margin-top:39px}
-.right{display:none;position:fixed;margin-top:-85%;font-family:Arimo,sans-serif;margin-left:-17%}
+.right{display:none;position:fixed;margin-top:-108%;font-family:Arimo,sans-serif;margin-left:-17%}
 .right a{color:#333;text-transform:uppercase;text-decoration:none;opacity:.7}
 .right a:hover{opacity:1;text-decoration:none;color:#757575}
 .right ul{list-style:none}
@@ -1628,7 +1629,7 @@ body{background: url('../img/background.jpg');}
 .social li a i {font-size: 16px;margin: 0 0 0 5px;color: #EDEFF1 !important;}
 .menu-fixed{height:40px;background-color: rgba(89, 109, 101, 0.5);line-height: 40px;position:fixed;width:100%;z-index: 2;margin-top: 0;}
 #name-fixed{float:left;margin-left: 1%;}
-.right{display:none;position:fixed;margin-top:-85%;font-family:Arimo,sans-serif;margin-left:-17%}
+.right{display:none;position:fixed;margin-top:-108%;font-family:Arimo,sans-serif;margin-left:-17%}
 .right a{color:#FFF;font-weight: bold;text-transform:uppercase;text-decoration:none;opacity:.7}
 .right a:hover{opacity:1;text-decoratisvgon:none;color:#757575}
 .right ul{list-style:none}
