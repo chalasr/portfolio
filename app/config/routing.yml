@@ -1,3 +1,11 @@
+robin_test:
+    resource: "@RobinTestBundle/Resources/config/routing.yml"
+    prefix:   /
+
+robin_works:
+    resource: "@RobinWorksBundle/Resources/config/routing.yml"
+    prefix:   /
+
 robin_user:
     resource: "@RobinUserBundle/Resources/config/routing.yml"
     prefix:   /
