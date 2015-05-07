@@ -61,6 +61,7 @@ select{background:#fff!important}
 *,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 html{font-size:62.5%;-webkit-tap-highlight-color:transparent}
 body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}
+body p{ font-size: 17px !important}
 button,input,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}
 a{color:#428bca;text-decoration:none}
 a:focus,a:hover{color:#2a6496;text-decoration:underline}
@@ -145,6 +146,7 @@ pre{display:block;padding:9.5px;margin:0 0 10px;font-size:13px;line-height:1.428
 pre code{padding:0;font-size:inherit;color:inherit;white-space:pre-wrap;background-color:transparent;border-radius:0}
 .pre-scrollable{max-height:340px;overflow-y:scroll}
 .container,.container-fluid{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
+@media (max-width: 700px) {.container{width: 168% !important;} #name-fixed{display:none;}}
 @media (min-width:768px){.container{width:750px}}
 @media (min-width:992px){.container{width:970px}}
 @media (min-width:1200px){.container{width:1170px}}
@@ -984,7 +986,7 @@ a.badge:focus,a.badge:hover{color:#fff;text-decoration:none;cursor:pointer}
 .jumbotron .h1,.jumbotron h1{color:inherit}
 .jumbotron p{margin-bottom:15px;font-size:21px;font-weight:200}
 .container .jumbotron{border-radius:6px}
-.jumbotron .container{max-width:100%}
+.jumbotron
 @media screen and (min-width:768px){.jumbotron{padding-top:48px;padding-bottom:48px}
 .container .jumbotron{padding-right:60px;padding-left:60px}
 .jumbotron .h1,.jumbotron h1{font-size:63px}}
@@ -1667,22 +1669,6 @@ svg:hover path { cursor:pointer;fill: #9E9E9E !important;}
 @media (max-width:980px){ .technother{ margin-left: 18%;}}
 @media (max-width:760px){ .technother{ margin-left: 0%;}}
 @media (max-width:650px){.otherback, .otherfront{ display:none;}}
-footer {
-    bottom: 0;
-    width: 110%;
-    margin-left: -5%;
-    background-color: #F5F5F5;
-    padding: 25px 0;
-    font-size: 15px;
-    text-align: center;
-    text-transform: uppercase;
-    opacity: 0.6;
-    transition: opacity .2s ease;
-}
-footer:hover {
-    opacity: 1.2;
-    transition: opacity .2s ease;
-}
-footer p {
-    margin: 0;
-}
+/*@viewport{ width: 600px;}*/
+footer {bottom: 0;width: 110%;margin-left: -5%;background-color: #F5F5F5;padding: 25px 0;font-size: 15px;text-align: center;text-transform: uppercase;opacity: 0.6;transition: opacity .2s ease;}
+footer:hover {opacity: 1.2; transition: opacity .2s ease;}footer p {margin: 0;}

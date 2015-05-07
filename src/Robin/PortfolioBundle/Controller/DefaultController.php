@@ -2,24 +2,12 @@
 
 namespace Robin\PortfolioBundle\Controller;
 
-<<<<<<< HEAD
-=======
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
->>>>>>> bef2e3058a49fb67f969bb94f553ce20b04eb95a
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class DefaultController extends Controller
 {
-<<<<<<< HEAD
-    public function indexAction($name)
-    {
-        return $this->render('PortfolioBundle:Default:index.html.twig', array('name' => $name));
-    }
-
-    public function homeAction()
-    {
-=======
     public function indexAction($name){
         return $this->render('PortfolioBundle:Default:index.html.twig', array('name' => $name));
     }
@@ -35,7 +23,6 @@ class DefaultController extends Controller
         $this->get('mailer')->send($message);
       }
 
->>>>>>> bef2e3058a49fb67f969bb94f553ce20b04eb95a
         return $this->render('PortfolioBundle:Default:home.html.twig');
     }
 }
