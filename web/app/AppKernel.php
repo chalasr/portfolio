@@ -20,6 +20,8 @@ class AppKernel extends Kernel
             new Robin\PortfolioBundle\PortfolioBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new Robin\UserBundle\RobinUserBundle(),
+            new Robin\WorksBundle\RobinWorksBundle(),
+            new Robin\TestBundle\RobinTestBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
