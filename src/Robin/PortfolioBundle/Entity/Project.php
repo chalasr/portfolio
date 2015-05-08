@@ -5,7 +5,7 @@ namespace Robin\PortfolioBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Project
+ * Project.
  *
  * @ORM\Table()
  * @ORM\Entity(repositoryClass="Robin\PortfolioBundle\Entity\ProjectRepository")
@@ -13,7 +13,7 @@ use Doctrine\ORM\Mapping as ORM;
 class Project
 {
     /**
-     * @var integer
+     * @var int
      *
      * @ORM\Column(name="id", type="integer")
      * @ORM\Id
@@ -49,11 +49,10 @@ class Project
      */
     private $class;
 
-
     /**
-     * Get id
+     * Get id.
      *
-     * @return integer
+     * @return int
      */
     public function getId()
     {
@@ -61,9 +60,10 @@ class Project
     }
 
     /**
-     * Set name
+     * Set name.
      *
      * @param string $name
+     *
      * @return Project
      */
     public function setName($name)
@@ -74,7 +74,7 @@ class Project
     }
 
     /**
-     * Get name
+     * Get name.
      *
      * @return string
      */
@@ -84,9 +84,10 @@ class Project
     }
 
     /**
-     * Set description
+     * Set description.
      *
      * @param string $description
+     *
      * @return Project
      */
     public function setDescription($description)
@@ -97,7 +98,7 @@ class Project
     }
 
     /**
-     * Get description
+     * Get description.
      *
      * @return string
      */
@@ -107,9 +108,10 @@ class Project
     }
 
     /**
-     * Set outils
+     * Set outils.
      *
      * @param string $outils
+     *
      * @return Project
      */
     public function setOutils($outils)
@@ -120,7 +122,7 @@ class Project
     }
 
     /**
-     * Get outils
+     * Get outils.
      *
      * @return string
      */
@@ -130,9 +132,10 @@ class Project
     }
 
     /**
-     * Set class
+     * Set class.
      *
      * @param string $class
+     *
      * @return Project
      */
     public function setClass($class)
@@ -143,7 +146,7 @@ class Project
     }
 
     /**
-     * Get class
+     * Get class.
      *
      * @return string
      */
