@@ -17,8 +17,4 @@ parameters:
     locale:            en
 
     # A secret key that's used to generate certain security-related tokens
-<<<<<<< HEAD
     secret:            ThisTokenIsNotSoSecretChangeIt
-=======
-    secret:            Three can keep secret, if two of them are dead
->>>>>>> 9652dbc0f473744fff092f7ee6737f947ed4d7cf
