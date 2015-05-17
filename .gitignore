@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 /web/
 /web/config.php
+=======
+/web/bundles/
+>>>>>>> github
 /app/bootstrap.php.cache
 /app/cache/*
 /app/config/parameters.yml

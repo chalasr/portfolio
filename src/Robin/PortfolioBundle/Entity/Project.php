@@ -5,7 +5,11 @@ namespace Robin\PortfolioBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
+<<<<<<< HEAD
  * Project.
+=======
+ * Project
+>>>>>>> github
  *
  * @ORM\Table()
  * @ORM\Entity(repositoryClass="Robin\PortfolioBundle\Entity\ProjectRepository")
@@ -13,7 +17,11 @@ use Doctrine\ORM\Mapping as ORM;
 class Project
 {
     /**
+<<<<<<< HEAD
      * @var int
+=======
+     * @var integer
+>>>>>>> github
      *
      * @ORM\Column(name="id", type="integer")
      * @ORM\Id
@@ -49,10 +57,18 @@ class Project
      */
     private $class;
 
+<<<<<<< HEAD
     /**
      * Get id.
      *
      * @return int
+=======
+
+    /**
+     * Get id
+     *
+     * @return integer
+>>>>>>> github
      */
     public function getId()
     {
@@ -60,10 +76,16 @@ class Project
     }
 
     /**
+<<<<<<< HEAD
      * Set name.
      *
      * @param string $name
      *
+=======
+     * Set name
+     *
+     * @param string $name
+>>>>>>> github
      * @return Project
      */
     public function setName($name)
@@ -74,7 +96,11 @@ class Project
     }
 
     /**
+<<<<<<< HEAD
      * Get name.
+=======
+     * Get name
+>>>>>>> github
      *
      * @return string
      */
@@ -84,10 +110,16 @@ class Project
     }
 
     /**
+<<<<<<< HEAD
      * Set description.
      *
      * @param string $description
      *
+=======
+     * Set description
+     *
+     * @param string $description
+>>>>>>> github
      * @return Project
      */
     public function setDescription($description)
@@ -98,7 +130,11 @@ class Project
     }
 
     /**
+<<<<<<< HEAD
      * Get description.
+=======
+     * Get description
+>>>>>>> github
      *
      * @return string
      */
@@ -108,10 +144,16 @@ class Project
     }
 
     /**
+<<<<<<< HEAD
      * Set outils.
      *
      * @param string $outils
      *
+=======
+     * Set outils
+     *
+     * @param string $outils
+>>>>>>> github
      * @return Project
      */
     public function setOutils($outils)
@@ -122,7 +164,11 @@ class Project
     }
 
     /**
+<<<<<<< HEAD
      * Get outils.
+=======
+     * Get outils
+>>>>>>> github
      *
      * @return string
      */
@@ -132,10 +178,16 @@ class Project
     }
 
     /**
+<<<<<<< HEAD
      * Set class.
      *
      * @param string $class
      *
+=======
+     * Set class
+     *
+     * @param string $class
+>>>>>>> github
      * @return Project
      */
     public function setClass($class)
@@ -146,7 +198,11 @@ class Project
     }
 
     /**
+<<<<<<< HEAD
      * Get class.
+=======
+     * Get class
+>>>>>>> github
      *
      * @return string
      */
