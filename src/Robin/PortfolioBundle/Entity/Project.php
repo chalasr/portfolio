@@ -6,10 +6,10 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
 <<<<<<< HEAD
- * Project.
-=======
  * Project
->>>>>>> github
+=======
+ * Project.
+>>>>>>> 9652dbc0f473744fff092f7ee6737f947ed4d7cf
  *
  * @ORM\Table()
  * @ORM\Entity(repositoryClass="Robin\PortfolioBundle\Entity\ProjectRepository")
@@ -18,10 +18,10 @@ class Project
 {
     /**
 <<<<<<< HEAD
-     * @var int
-=======
      * @var integer
->>>>>>> github
+=======
+     * @var int
+>>>>>>> 9652dbc0f473744fff092f7ee6737f947ed4d7cf
      *
      * @ORM\Column(name="id", type="integer")
      * @ORM\Id
@@ -58,17 +58,17 @@ class Project
     private $class;
 
 <<<<<<< HEAD
-    /**
-     * Get id.
-     *
-     * @return int
-=======
 
     /**
      * Get id
      *
      * @return integer
->>>>>>> github
+=======
+    /**
+     * Get id.
+     *
+     * @return int
+>>>>>>> 9652dbc0f473744fff092f7ee6737f947ed4d7cf
      */
     public function getId()
     {
@@ -77,15 +77,15 @@ class Project
 
     /**
 <<<<<<< HEAD
+     * Set name
+     *
+     * @param string $name
+=======
      * Set name.
      *
      * @param string $name
      *
-=======
-     * Set name
-     *
-     * @param string $name
->>>>>>> github
+>>>>>>> 9652dbc0f473744fff092f7ee6737f947ed4d7cf
      * @return Project
      */
     public function setName($name)
@@ -97,10 +97,10 @@ class Project
 
     /**
 <<<<<<< HEAD
-     * Get name.
-=======
      * Get name
->>>>>>> github
+=======
+     * Get name.
+>>>>>>> 9652dbc0f473744fff092f7ee6737f947ed4d7cf
      *
      * @return string
      */
@@ -111,15 +111,15 @@ class Project
 
     /**
 <<<<<<< HEAD
+     * Set description
+     *
+     * @param string $description
+=======
      * Set description.
      *
      * @param string $description
      *
-=======
-     * Set description
-     *
-     * @param string $description
->>>>>>> github
+>>>>>>> 9652dbc0f473744fff092f7ee6737f947ed4d7cf
      * @return Project
      */
     public function setDescription($description)
@@ -131,10 +131,10 @@ class Project
 
     /**
 <<<<<<< HEAD
-     * Get description.
-=======
      * Get description
->>>>>>> github
+=======
+     * Get description.
+>>>>>>> 9652dbc0f473744fff092f7ee6737f947ed4d7cf
      *
      * @return string
      */
@@ -145,15 +145,15 @@ class Project
 
     /**
 <<<<<<< HEAD
+     * Set outils
+     *
+     * @param string $outils
+=======
      * Set outils.
      *
      * @param string $outils
      *
-=======
-     * Set outils
-     *
-     * @param string $outils
->>>>>>> github
+>>>>>>> 9652dbc0f473744fff092f7ee6737f947ed4d7cf
      * @return Project
      */
     public function setOutils($outils)
@@ -165,10 +165,10 @@ class Project
 
     /**
 <<<<<<< HEAD
-     * Get outils.
-=======
      * Get outils
->>>>>>> github
+=======
+     * Get outils.
+>>>>>>> 9652dbc0f473744fff092f7ee6737f947ed4d7cf
      *
      * @return string
      */
@@ -179,15 +179,15 @@ class Project
 
     /**
 <<<<<<< HEAD
+     * Set class
+     *
+     * @param string $class
+=======
      * Set class.
      *
      * @param string $class
      *
-=======
-     * Set class
-     *
-     * @param string $class
->>>>>>> github
+>>>>>>> 9652dbc0f473744fff092f7ee6737f947ed4d7cf
      * @return Project
      */
     public function setClass($class)
@@ -199,10 +199,10 @@ class Project
 
     /**
 <<<<<<< HEAD
-     * Get class.
-=======
      * Get class
->>>>>>> github
+=======
+     * Get class.
+>>>>>>> 9652dbc0f473744fff092f7ee6737f947ed4d7cf
      *
      * @return string
      */

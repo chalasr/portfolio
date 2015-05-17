@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+=======
 robin_test:
     resource: "@RobinTestBundle/Resources/config/routing.yml"
     prefix:   /
@@ -7,8 +8,7 @@ robin_works:
     resource: "@RobinWorksBundle/Resources/config/routing.yml"
     prefix:   /
 
-=======
->>>>>>> github
+>>>>>>> 9652dbc0f473744fff092f7ee6737f947ed4d7cf
 robin_user:
     resource: "@RobinUserBundle/Resources/config/routing.yml"
     prefix:   /

@@ -9,10 +9,10 @@ use Symfony\Component\DependencyInjection\Loader;
 
 /**
 <<<<<<< HEAD
- * This is the class that loads and manages your bundle configuration.
-=======
  * This is the class that loads and manages your bundle configuration
->>>>>>> github
+=======
+ * This is the class that loads and manages your bundle configuration.
+>>>>>>> 9652dbc0f473744fff092f7ee6737f947ed4d7cf
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */

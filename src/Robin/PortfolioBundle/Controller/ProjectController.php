@@ -2,9 +2,9 @@
 
 namespace Robin\PortfolioBundle\Controller;
 <<<<<<< HEAD
-
 =======
->>>>>>> github
+
+>>>>>>> 9652dbc0f473744fff092f7ee6737f947ed4d7cf
 use Robin\PortfolioBundle\Entity\Project;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -13,12 +13,12 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 class ProjectController extends Controller
 {
 <<<<<<< HEAD
-    public function indexAction()
-    {
-=======
 
     public function indexAction(){
->>>>>>> github
+=======
+    public function indexAction()
+    {
+>>>>>>> 9652dbc0f473744fff092f7ee6737f947ed4d7cf
         $repository = $this->getDoctrine()
         ->getManager()
         ->getRepository('PortfolioBundle:Project');
@@ -27,10 +27,10 @@ class ProjectController extends Controller
 
         return $this->render('PortfolioBundle:Project:index.html.twig', [
 <<<<<<< HEAD
-            'listProjects' => $listProjects,
-=======
             'listProjects' => $listProjects
->>>>>>> github
+=======
+            'listProjects' => $listProjects,
+>>>>>>> 9652dbc0f473744fff092f7ee6737f947ed4d7cf
         ]);
     }
 
@@ -42,19 +42,19 @@ class ProjectController extends Controller
 
         $project = $repository->find($id);
 <<<<<<< HEAD
+        if (null === $project)
+            throw new NotFoundHttpException("Il n'existe pas de projets ayant l'id numéro ".$id.".");
+
+        return $this->render('PortfolioBundle:Project:view.html.twig', [
+            'project' => $project
+=======
         if (null === $project) {
             throw new NotFoundHttpException("Il n'existe pas de projets ayant l'id numéro ".$id.'.');
         }
 
         return $this->render('PortfolioBundle:Project:view.html.twig', [
             'project' => $project,
-=======
-        if (null === $project)
-            throw new NotFoundHttpException("Il n'existe pas de projets ayant l'id numéro ".$id.".");
-
-        return $this->render('PortfolioBundle:Project:view.html.twig', [
-            'project' => $project
->>>>>>> github
+>>>>>>> 9652dbc0f473744fff092f7ee6737f947ed4d7cf
         ]);
     }
 
@@ -64,13 +64,13 @@ class ProjectController extends Controller
         $project->setName('Recherche développeur Symfony2.');
         $project->setDescription('Robin');
 <<<<<<< HEAD
-        $project->setOutils('Nous recherchons un développeur Symfony2 débutant sur Lyon. Blabla…');
-        $project->setClass('class');
-=======
         $project->setOutils("Nous recherchons un développeur Symfony2 débutant sur Lyon. Blabla…");
         $project->setClass("class");
 
->>>>>>> github
+=======
+        $project->setOutils('Nous recherchons un développeur Symfony2 débutant sur Lyon. Blabla…');
+        $project->setClass('class');
+>>>>>>> 9652dbc0f473744fff092f7ee6737f947ed4d7cf
 
         $em = $this->getDoctrine()->getManager();
         $projectRepository = $em->getRepository('PortfolioBundle:Project');
@@ -80,7 +80,6 @@ class ProjectController extends Controller
         // Étape 2 : On « flush » tout ce qui a été persisté avant
         $em->flush();
 <<<<<<< HEAD
-=======
 
             // Reste de la méthode qu'on avait déjà écrit
           $request->getSession()->getFlashBag()->add('notice', 'Annonce bien enregistrée.');
@@ -90,6 +89,7 @@ class ProjectController extends Controller
           ]));
 
         return $this->render('PortfolioBundle:Project:add.html.twig');
->>>>>>> github
+=======
+>>>>>>> 9652dbc0f473744fff092f7ee6737f947ed4d7cf
     }
 }

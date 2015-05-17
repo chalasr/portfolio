@@ -21,10 +21,10 @@ class AppKernel extends Kernel
             new FOS\UserBundle\FOSUserBundle(),
             new Robin\UserBundle\RobinUserBundle(),
 <<<<<<< HEAD
+=======
             new Robin\WorksBundle\RobinWorksBundle(),
             new Robin\TestBundle\RobinTestBundle(),
-=======
->>>>>>> github
+>>>>>>> 9652dbc0f473744fff092f7ee6737f947ed4d7cf
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

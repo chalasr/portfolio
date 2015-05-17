@@ -3,7 +3,7 @@ Portfolio App - Made with Symfony 2.3
 ================
 
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/4fbc5334-d1e5-4b41-bd3b-b749b18170c8/mini.png)](https://insight.sensiolabs.com/projects/4fbc5334-d1e5-4b41-bd3b-b749b18170c8)
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/chalasr/sfPortfolio)
+[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/chalasr/Symfony2_Portfolio)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/chalasr/Symfony2_Portfolio/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/chalasr/Symfony2_Portfolio/?branch=master)
 
 This application was created by Robin CHALAS - FullStack Web Developer -  http://www.chalasdev.fr/
@@ -59,7 +59,7 @@ Portfolio App - Made with Symfony 2.3
 ================
 
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/4fbc5334-d1e5-4b41-bd3b-b749b18170c8/mini.png)](https://insight.sensiolabs.com/projects/4fbc5334-d1e5-4b41-bd3b-b749b18170c8)
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/chalasr/Symfony2_Portfolio)
+[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/chalasr/sfPortfolio)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/chalasr/Symfony2_Portfolio/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/chalasr/Symfony2_Portfolio/?branch=master)
 
 This application was created by Robin CHALAS - FullStack Web Developer -  http://www.chalasdev.fr/
@@ -110,4 +110,4 @@ License
 -------
 
 Copyright (c) 2014-2015 [Robin Chalas](http://www.chaladev.fr/) [![License](http://img.shields.io/:license-gpl3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0.html)
->>>>>>> github
+>>>>>>> 9652dbc0f473744fff092f7ee6737f947ed4d7cf
