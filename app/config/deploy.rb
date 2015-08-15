@@ -17,3 +17,13 @@ set :writable_dirs,       ["app/cache", "app/logs"]
 set :user, "chalas_r"
 set :permission_method,   :chown
 set :use_set_permissions, true
+task :upload_parameters do
+  origin_file = "app/config/parameters.yml"
+  destination_file = latest_release + "/app/config/parameters.yml" # Notice the latest_release
+
+  try_sudo "mkdir -p #{File.dirname(destination_file)}"
+  top.upload(origin_file, destination_file)
+end
+
+after "deploy:share_childs", "upload_parameters"
+before "symfony:cache:warmup", "symfony:doctrine:schema:update"
