@@ -66,6 +66,9 @@
         $('.devicons-chrome').click(function(){
             toast('Google Maps API', 3000)
         });
+        $('.devicons-symfony').click(function(){
+            toast('Symfony', 3000)
+        });
         $('.timeline-panel').hover(
             function(){
                 $(this).find('.caption').slideDown(250);

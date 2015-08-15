@@ -1600,14 +1600,14 @@ a:focus{text-decoration:none!important;outline:0!important}
 .leftside{border-right:2px solid #E6E6E6}
 .laravel,.yeoman,.grunt{opacity: 0.7}
 #laradiv{margin-top: -19px;margin-bottom: 48px}
-#cloudwac{margin-top: 50px;min-height: 286px;background-image: url(../img/miniatures/cloudwac1-mini.png);background-size: 100% 100%;background-repeat: no-repeat}
+#webrtconf{margin-top: 50px;min-height: 286px;background-image: url(../img/miniatures/webrtconf.png);background-size: 100% 100%;background-repeat: no-repeat}
 #cloudwac_hover{display:none;opacity: 0.9;margin-top: 50px;min-height: 286px;}
 .righttitle{margin-left: 75%}
-#freeads{margin-top: -246px;min-height: 286px;background-image: url(../img/miniatures/freeads1-mini.png);background-size: 100% 100%;background-repeat: no-repeat}
+#workmanager{margin-top: -246px;min-height: 286px;background-image: url(../img/miniatures/workmanager.png);background-size: 100% 100%;background-repeat: no-repeat}
 #mymaps{margin-top: 50px;min-height: 286px;background-image: url(../img/miniatures/mymaps2-mini.png);background-size: 100% 100%;background-repeat: no-repeat}
 #mypaint{min-height: 286px;margin-top: -95px;background-image: url(../img/miniatures/mypaint-mini.png);background-size: 100% 100%;background-repeat: no-repeat}
 #ateliermac{margin-top: -95px;min-height: 286px;background-image: url(../img/lateliermac1.png);background-size: 100% 100%;background-repeat: no-repeat}
-#whacker{margin-top: 50px;min-height: 286px;background-image: url(../img/miniatures/whackernet-mini.png);background-size: 100% 100%;background-repeat: no-repeat}
+#cloudwac{margin-top: 50px;min-height: 286px;background-image: url(../img/miniatures/cloudwac1-mini.png);background-size: 100% 100%;background-repeat: no-repeat}
 .class{font-weight:bold;color:#757575}
 .jumbotron{background-color: #E0E0E0;}
 .container{background-color: #F5F5F5 !important;padding-right: 55px;padding-left: 55px;}
