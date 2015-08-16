@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 /web/bundles/
+=======
+/web/
+/web/config.php
+>>>>>>> 9652dbc0f473744fff092f7ee6737f947ed4d7cf
 /app/bootstrap.php.cache
 /app/cache/*
 /app/config/parameters.yml
