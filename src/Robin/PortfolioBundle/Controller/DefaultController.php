@@ -23,6 +23,20 @@ class DefaultController extends Controller
         $this->get('mailer')->send($message);
       }
 
+        return $this->render('PortfolioBundle:Default:home-en.html.twig');
+    }
+
+    public function homeFrAction(Request $request){
+      if ('POST' === $request->getMethod()){
+        // The http request is of type POST
+        $message = \Swift_Message::newInstance()
+        ->setSubject('Hello Email')
+        ->setFrom('robin.chalas@gmail.com')
+        ->setTo('robin.chalas@epitech.eu')
+        ->setBody($this->renderView('PortfolioBundle:Default:email.html.twig'));
+        $this->get('mailer')->send($message);
+      }
+
         return $this->render('PortfolioBundle:Default:home.html.twig');
     }
 }

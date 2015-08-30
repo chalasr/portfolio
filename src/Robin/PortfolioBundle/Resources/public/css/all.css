@@ -1533,6 +1533,8 @@ td.visible-print,th.visible-print{display:table-cell!important}}
 .menu ul{margin-bottom:0}
 .menu a{color:#333;text-transform:uppercase;opacity:.7;font-size: 15.6px}
 .menu a:hover{text-decoration:none;color:#FFF;opacity:1.3;margin-top:-5px;-webkit-transition:all .2s ease-in;-moz-transition:all .2s ease-in;-o-transition:all .2s ease-in;transition:all .2s ease-in}
+.trans{color:#333;text-transform:uppercase;opacity:.7;font-size: 15.6px;margin-right:8px}
+.trans:hover{text-decoration:none;color:#FFF;opacity:1.3;-webkit-transition:all .2s ease-in;-moz-transition:all .2s ease-in;-o-transition:all .2s ease-in;transition:all .2s ease-in}
 #competences{margin-top:-160px}
 #block3{margin-top:-100px}
 #block4{margin-top:-211px}

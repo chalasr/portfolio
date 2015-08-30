@@ -6,6 +6,10 @@ portfolio_homepage:
     path:     /
     defaults: { _controller: PortfolioBundle:Default:home }
 
+portfolio_homepage_fr:
+    path:     /fr
+    defaults: { _controller: PortfolioBundle:Default:homeFr }
+
 portfolio_view:
     path:      /project/{id}
     defaults:  { _controller: PortfolioBundle:Project:view }
