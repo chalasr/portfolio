@@ -1,2 +1,25 @@
-Hello Root !
- <!-- TODO: BEGIN E-COMMERCE -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  </head>
+  <body>
+    <div class="panel-default">
+      <div class="panel-body">
+      <p>
+        Nom : {{ prenom }} {{ nom|upper }}
+      </p>
+      <p>
+        Email: {{ email }}
+      </p>
+      <p>
+        Message: {{ content|nl2br }}
+      </p>
+      </div>
+    </div>
+  </body>
+</html>
