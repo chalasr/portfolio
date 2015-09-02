@@ -67,7 +67,7 @@ swiftmailer:
     transport:  smtp
     host:       "%mailer_host%"
     port:       25
-    encryption: ssl
+    encryption: ~
     username:   "%mailer_user%"
     password:   "%mailer_password%"
 
