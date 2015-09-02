@@ -66,7 +66,7 @@ doctrine:
 swiftmailer:
     transport:  smtp
     host:       "%mailer_host%"
-    port:       465
+    port:       25
     encryption: ssl
     username:   "%mailer_user%"
     password:   "%mailer_password%"
