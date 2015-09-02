@@ -17,7 +17,9 @@ framework:
         #assets_version: SomeVersionScheme
     default_locale:  "%locale%"
     trusted_proxies: ~
-    session:         ~
+    session:
+        # name: 'neon-exchange'
+        save_path: null
     fragments:       ~
     http_method_override: true
 
