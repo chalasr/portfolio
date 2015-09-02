@@ -28,7 +28,8 @@ class DefaultController extends Controller
               ->setSubject('chalasdev.fr - Contact visiteur')
               ->setFrom($request->request->get('email'))
               ->setTo('robin.chalas@gmail.com')
-              ->setBody($mailBody);
+              ->setBody($mailBody)
+              ->setContentType("text/html");
 
             $this->get('mailer')->send($message);
         }
