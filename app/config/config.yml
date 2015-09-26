@@ -17,7 +17,9 @@ framework:
         #assets_version: SomeVersionScheme
     default_locale:  "%locale%"
     trusted_proxies: ~
-    session:         ~
+    session:
+        # name: 'neon-exchange'
+        save_path: null
     fragments:       ~
     http_method_override: true
 
@@ -63,11 +65,11 @@ doctrine:
 # Swiftmailer Configuration
 swiftmailer:
     transport:  smtp
-    host:       smtp.gmail.com
-    port:       465
-    encryption: ssl
-    username:   robin.chalas@gmail.com
-    password:   mohandas26
+    host:       "%mailer_host%"
+    port:       25
+    encryption: ~
+    username:   "%mailer_user%"
+    password:   "%mailer_password%"
 
 fos_user:
     db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
