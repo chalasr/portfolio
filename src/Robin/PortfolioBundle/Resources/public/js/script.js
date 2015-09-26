@@ -69,6 +69,9 @@
         $('.devicons-symfony').click(function(){
             toast('Symfony', 3000)
         });
+        $('.devicons-python').click(function(){
+            toast('Python', 3000)
+        });
         $('.timeline-panel').hover(
             function(){
                 $(this).find('.caption').slideDown(250);
