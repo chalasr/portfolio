@@ -65,7 +65,7 @@ set :assets_install_flags, '--symlink'
 
 after :clear_cache, :clear_cache do
   on roles(:web), wait: 10 do
-    run "#{sudo} chmod -R www-data:www-data /var/www/html/projects/Portfolio/current/app/cache"
+    run "#{sudo} chmod -R 777 /var/www/html/projects/Portfolio/current/app/cache"
 
     # Here we can do anything such as:
     # within release_path do
