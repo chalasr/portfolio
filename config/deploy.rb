@@ -27,7 +27,7 @@ set :log_path, fetch(:app_path) + "/logs"
 set :cache_path, fetch(:app_path) + "/cache"
 set :app_config_path, fetch(:app_path) + "/config"
 set :use_sudo, true
-set :permission_method, 'chgrp'
+set :permission_method, 'chmod'
 set :use_set_permissions, true
 
 
@@ -44,10 +44,13 @@ set :assets_install_path, fetch(:web_path)
 set :assets_install_flags, '--symlink'
 
 namespace :deploy do
-  on roles :web do
-    execute :chmod, "-R 777 #{latest_release}/app/cache"
+  task :fixmod do
+      run "sudo chmod -R 777 #{deploy_to}/current/app/cache"
   end
 end
+after 'deploy:finished', 'deploy:fixmod'
+
+
 # after :clear_cache, :clear_cache do
 #   on roles(:web), wait: 10 do
 #     run "#{sudo} chmod -R 777 /var/www/html/projects/Portfolio/current/app/cache"
