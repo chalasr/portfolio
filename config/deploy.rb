@@ -5,7 +5,7 @@ set :application, 'portfolio'
 set :repo_url, 'git@github.com:chalasr/sfPortfolio.git'
 set :ssh_user, "chalas_r"
 set :format, :pretty
-set :log_level, :debug
+set :log_level, :info
 set :stage, "production"
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -27,9 +27,9 @@ set :log_path, fetch(:app_path) + "/logs"
 set :cache_path, fetch(:app_path) + "/cache"
 set :app_config_path, fetch(:app_path) + "/config"
 set :use_sudo, true
-set :permission_method, 'chmod'
+set :permission_method, :chmod
 set :use_set_permissions, true
-
+set :writable_dirs, ["app/cache", "app/logs"]
 
 set :linked_dirs, %w{app/logs}
 set :keep_releases, 3
@@ -44,21 +44,13 @@ set :assets_install_path, fetch(:web_path)
 set :assets_install_flags, '--symlink'
 
 namespace :deploy do
-  task :fixmod do
-      run "sudo chmod -R 777 #{deploy_to}/current/app/cache"
+  task :check_permissions do
+    on roles(:web) do
+      execute "chmod -R 0777 #{release_path}/app/cache"
+      execute "echo 'finished'"
+    end
   end
 end
-after 'deploy:finished', 'deploy:fixmod'
 
-
-# after :clear_cache, :clear_cache do
-#   on roles(:web), wait: 10 do
-#     run "#{sudo} chmod -R 777 /var/www/html/projects/Portfolio/current/app/cache"
-#
-#     # Here we can do anything such as:
-#     # within release_path do
-#     #   execute :rake, 'cache:clear'
-#     # end
-#   end
-#
-# end
+after "deploy:finishing", "deploy:check_permissions"
+after "deploy:check_permissions", "deploy:finished"
