@@ -27,6 +27,8 @@ set :log_path, fetch(:app_path) + "/logs"
 set :cache_path, fetch(:app_path) + "/cache"
 set :app_config_path, fetch(:app_path) + "/config"
 set :use_sudo, true
+set :use_set_permissions, true
+
 
 set :linked_dirs, %w{app/logs}
 set :keep_releases, 3
