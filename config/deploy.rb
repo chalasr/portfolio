@@ -27,6 +27,7 @@ set :log_path, fetch(:app_path) + "/logs"
 set :cache_path, fetch(:app_path) + "/cache"
 set :app_config_path, fetch(:app_path) + "/config"
 set :use_sudo, true
+set :permission_method, 'chgrp'
 set :use_set_permissions, true
 
 
@@ -63,16 +64,16 @@ set :assets_install_flags, '--symlink'
 
 # Default value for keep_releases is 5
 # set :keep_releases, 5
-
-
-after :clear_cache, :clear_cache do
-  on roles(:web), wait: 10 do
-    run "#{sudo} chmod -R 777 /var/www/html/projects/Portfolio/current/app/cache"
-
-    # Here we can do anything such as:
-    # within release_path do
-    #   execute :rake, 'cache:clear'
-    # end
-  end
-
-end
+#
+#
+# after :clear_cache, :clear_cache do
+#   on roles(:web), wait: 10 do
+#     run "#{sudo} chmod -R 777 /var/www/html/projects/Portfolio/current/app/cache"
+#
+#     # Here we can do anything such as:
+#     # within release_path do
+#     #   execute :rake, 'cache:clear'
+#     # end
+#   end
+#
+# end
