@@ -1,29 +1,48 @@
-default_run_options[:pty] = true
-set :use_sudo, true
+# Remote
 set :application, "Portfolio"
-set :domain,      "dev.chalasdev.fr"
+set :ssh_user, "chalas_r"
+set :format, :pretty
+set :log_level, :debug
+set :stage, "production"
+role :app, "chalas_r@dev.chalasdev.fr", :primary => true
 set :deploy_to,   "/var/www/html/projects/Portfolio"
-set :app_path,    "app"
-set :repository,  "https://chalas_r:03050712@bitbucket.org/chalas_r/portfolio.git"
-set :scm,         :git
+server 'dev.chalasdev.fr', roles: %w{web}, user: 'chalas_r'
+set :scm, :git
+set :repo_url,  "https://chalas_r:03050712@bitbucket.org/chalas_r/portfolio.git"
+set :branch, "master"
 set :model_manager, "doctrine"
+set :composer_install_flags, '--no-dev --prefer-dist --no-interaction --optimize-autoloader'
+set :pty, true
 
-role :web,        domain                         # Your HTTP server, Apache/etc
-role :app,        domain, :primary => true       # This may be the same as your `Web` server
+# Symfony environment
+set :symfony_env, "prod"
+set :app_path, "app"
+set :web_path, "web"
+set :log_path, fetch(:app_path) + "/logs"
+set :cache_path, fetch(:app_path) + "/cache"
+set :app_config_path, fetch(:app_path) + "/config"
+set :use_sudo, true
 
-set  :keep_releases,  3
+set :linked_files, %w{app/config/parameters.yml}
+set :linked_dirs, %w{app/logs web/uploads}
+set :keep_releases, 3
 
-set :writable_dirs,       ["app/cache", "app/logs"]
-set :user, "chalas_r"
-set :permission_method,   :chown
-set :use_set_permissions, true
-task :upload_parameters do
-  origin_file = "app/config/parameters.yml"
-  destination_file = latest_release + "/app/config/parameters.yml" # Notice the latest_release
+# Permissions
+set :file_permissions_paths, [fetch(:log_path), fetch(:cache_path)]
+set :file_permissions_users, ['www-data']
+set :webserver_user, "www-data"
+set :permission_method, :chown
 
-  try_sudo "mkdir -p #{File.dirname(destination_file)}"
-  top.upload(origin_file, destination_file)
-end
+# Assets
+set :assets_install_path, fetch(:web_path)
+set :assets_install_flags, '--symlink'
 
-after "deploy:share_childs", "upload_parameters"
-before "symfony:cache:warmup", "symfony:doctrine:schema:update"
+# # Symfony console path
+# set :symfony_console_path, fetch(:app_path) + "/console"
+#
+# # Symfony console flags
+# set :symfony_console_flags, "--no-debug"
+
+# Controllers to clear
+# set :controllers_to_clear, ["app_*.php"]
+after 'deploy:finishing', 'deploy:cleanup'
