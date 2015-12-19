@@ -1536,7 +1536,7 @@ td.visible-print,th.visible-print{display:table-cell!important}}
 .trans{color:#333;text-transform:uppercase;opacity:.7;font-size: 15.6px;margin-right:8px}
 .trans:hover{text-decoration:none;color:#FFF;opacity:1.3;-webkit-transition:all .2s ease-in;-moz-transition:all .2s ease-in;-o-transition:all .2s ease-in;transition:all .2s ease-in}
 #competences{margin-top:-160px}
-#block3{margin-top:-100px}
+#block3{margin-top:-205px}
 #block4{margin-top:-211px}
 #block8{margin-top:-211px}
 #block10{margin-top:-211px}
@@ -1676,3 +1676,4 @@ svg:hover path { cursor:pointer;fill: #9E9E9E !important;}
 /*@viewport{ width: 600px;}*/
 footer {bottom: 0;width: 110%;margin-left: -5%;background-color: #F5F5F5;padding: 25px 0;font-size: 15px;text-align: center;text-transform: uppercase;opacity: 0.6;transition: opacity .2s ease;}
 footer:hover {opacity: 1.2; transition: opacity .2s ease;}footer p {margin: 0;}
+label.active {font-size: 1rem!important;}

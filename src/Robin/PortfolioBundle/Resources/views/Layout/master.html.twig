@@ -1,4 +1,28 @@
 <!DOCTYPE html>
+{% if(app.request.attributes.get('_route') == 'portfolio_homepage' ) %}
+<!--
+Hi !
+
+You are probably looking my code to know me better.
+If you are a recruiter/head-hunter/HR and you are looking for a productive Symfony2/AngularJS developer, I'am your man.
+Take a look at my github profile https://github.com/chalasr and send me an email by using the form contact at the bottom of this page.
+
+Hope I see your message soon.
+Regards.
+ -->
+{% else %}
+<!--
+Salut !
+
+Tu regardes probablement mon code afin de mieux me connaître.
+Si tu es un recruteur et que tu es à la recherche d'un développeur Symfony2/AngularJS motivé par les gros challenges techniques, je suis ton homme.
+Jette un oeil à mon github histoire de voir mes vrais réalisations : https://github.com/chalasr
+Envoie moi un email en utilisant le formulaire de contact en bas de page.
+
+En espérant avoir un message de toi bientôt.
+Au plaisir.
+-->
+{% endif %}
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -12,7 +36,9 @@
     <link rel="icon" href="{{ asset('bundles/portfolio/img/favicon.ico') }}" />
 
 </head>
+<body>
 {% block body %}
 
 {% endblock %}
+</body>
 </html>
