@@ -4,6 +4,7 @@ var addStream = require('add-stream');
 var ngAnnotate = require('gulp-ng-annotate');
 var uglify = require('gulp-uglify');
 var gutil = require('gulp-util');
+var webserver = require('gulp-webserver');
 var angularTemplateCache = require('gulp-angular-templatecache');
 
 gulp.task('default', function() {
@@ -21,6 +22,15 @@ gulp.task('default', function() {
 gulp.task('watch', ['default'], function() {
   gulp.watch(['./assets/js/src/**/*.js', './assets/js/src/*.js'], ['default']);
   gulp.watch(['./templates/*.html'], ['default']);
+});
+
+gulp.task('webserver', function() {
+  gulp.src('./')
+    .pipe(webserver({
+      livereload: true,
+      directoryListing: false,
+      open: true
+    }));
 });
 
 function prepareTemplates() {
