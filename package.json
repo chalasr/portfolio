@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My personal folio",
+  "main": "app.js",
+  "dependencies": {
+    "http": "^0.0.0",
+    "express": "^4.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "karma"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chalasr/portfolio.git"
+  },
+  "author": "chalasr",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/chalasr/portfolio/issues"
+  },
+  "homepage": "https://github.com/chalasr/portfolio#readme"
+}
