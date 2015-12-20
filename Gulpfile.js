@@ -8,23 +8,23 @@ var angularTemplateCache = require('gulp-angular-templatecache');
 
 gulp.task('default', function() {
   var build = ngAnnotate();
-  return gulp.src(['./src/*.js', './src/**/*.js'])
+  return gulp.src(['./assets/js/src/*.js', './assets/js/src/**/*.js'])
     .pipe(build.on('error', function(e) {
         catchError(build, e);
     }))
     .pipe(addStream.obj(prepareTemplates()))
     .pipe(concat('app.min.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./assets/js/dist'));
 });
 
 gulp.task('watch', ['default'], function() {
-  gulp.watch(['./src/**/*.js', './src/*.js'], ['default']);
-  gulp.watch(['./src/partials/**/*.html'], ['default']);
+  gulp.watch(['./assets/js/src/**/*.js', './assets/js/src/*.js'], ['default']);
+  gulp.watch(['./templates/*.html'], ['default']);
 });
 
 function prepareTemplates() {
-  return gulp.src('./src/partials/**/*.html')
+  return gulp.src('./templates/*.html')
     .pipe(angularTemplateCache());
 };
 

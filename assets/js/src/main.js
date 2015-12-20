@@ -5,13 +5,15 @@
 			$stateProvider
 				.state('home', {
 					url: '/',
-					templateUrl: '/templates/home-en.html',
+					templateUrl: 'home-en.html',
 					controller: 'MainCtrl as main'
 				})
 				.state('homefr', {
 					url: '/fr',
-					templateUrl: '/templates/home.html',
+					templateUrl: 'home.html',
 					controller: 'MainCtrl as main'
 				});
 		});
-})( angular.module('portfolio', ['ui.router']) );
+
+    var template = angular.module('templates', []);
+})( angular.module('portfolio', ['ui.router', 'templates']) );

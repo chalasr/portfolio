@@ -3,7 +3,7 @@ var app = express();
 var http = require('http').Server(app);
 
 app.use('/assets', express.static('assets'));
-app.use('/templates', express.static('templates'));
+// app.use('/templates', express.static('templates'));
 
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
