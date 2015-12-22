@@ -9,7 +9,7 @@
       },
       template:
       '<div class="btn-floating waves-effect waves-light technos grey">' +
-        '<span class="devicons devicons-{{tool}}"></span>' +
+        '<span class="devicons devicons-{{ tool }}"></span>' +
       '</div>',
     };
   };
