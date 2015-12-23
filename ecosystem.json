@@ -1,27 +1,23 @@
 {
-  /**
-   * Application configuration section
-   * http://pm2.keymetrics.io/docs/usage/application-declaration/
-   */
-  apps : [
+  "apps": [
     {
-      name      : "Portfolio",
-      script    : "app.js",
-      env: {
-        COMMON_VARIABLE: "true"
+      "name": "Portfolio",
+      "script"    : "app.js",
+      "env": {
+        "COMMON_VARIABLE": "true"
       },
-      env_production : {
-        NODE_ENV: "production"
+      "env_production" : {
+        "NODE_ENV": "production"
       }
     }
   ],
-  deploy: {
-    production: {
-      user: "chalas_r",
-      host: "chalasdev.fr",
-      ref: "origin/master",
-      repo: "git@github.com:chalasr/portfolio.git",
-      path: "/var/www/html/projects/portfolio-node",
+  "deploy": {
+    "production": {
+      "user": "chalas_r",
+      "host": "chalasdev.fr",
+      "ref": "origin/master",
+      "repo": "git@github.com:chalasr/portfolio.git",
+      "path": "/var/www/html/projects/portfolio-node",
       "post-deploy" : "npm install; pm2 restart app"
     }
   }
