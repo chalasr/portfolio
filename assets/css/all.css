@@ -1359,7 +1359,7 @@ a:focus{text-decoration:none!important;outline:0!important}
 #cloudwac_hover{display:none;opacity: 0.9;margin-top: 50px;min-height: 286px;}
 .righttitle{margin-left: 75%}
 #workmanager{margin-top: -246px;min-height: 286px;background-image: url(../img/miniatures/workmanager.png);background-size: 100% 100%;background-repeat: no-repeat}
-#mymaps{margin-top: 50px;min-height: 286px;background-image: url(../img/miniatures/mymaps2-mini.png);background-size: 100% 100%;background-repeat: no-repeat}
+#traveler{margin-top: 50px;min-height: 286px;background-image: url(../img/miniatures/mymaps2-mini.png);background-size: 100% 100%;background-repeat: no-repeat}
 #mypaint{min-height: 286px;margin-top: -95px;background-image: url(../img/miniatures/mypaint-mini.png);background-size: 100% 100%;background-repeat: no-repeat}
 #flaskp2p{min-height: 286px;margin-top: -95px;background-image: url(../img/miniatures/flaskp2p.png);background-size: 100% 100%;background-repeat: no-repeat}
 #ateliermac{margin-top: -95px;min-height: 286px;background-image: url(../img/lateliermac1.png);background-size: 100% 100%;background-repeat: no-repeat}
@@ -1393,7 +1393,7 @@ body{background: url('../img/background.jpg');}
 .right ul{list-style:none}
 .right li{margin-bottom:6px}
 @media (min-width:1680px){.menu-fixed{display:none !important;}}
-#dlcv:hover, #dlcv:focus, #dlcv:active{cursor:pointer;text-decoration:none;}
+.head-link:hover, .head-link:focus, .head-link:active{cursor:pointer;text-decoration:none;}
 .sendbtn button{  float: right;margin-top: -5%;margin-bottom: 33px;  margin-right: 3%;}
 .caption{width: 100%;background-color: rgba(89, 109, 101, 0.7); height:284px;display:none;}
 .caption .card{ height:284px !important}

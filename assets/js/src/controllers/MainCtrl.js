@@ -2,7 +2,6 @@
 
     function MainCtrl($rootScope) {
         $rootScope.loadJavascripts = function() {
-            console.log('javascripts');
             $("a[href^=#]").click(function() {
                 var cible, hauteur;
                 cible = $(this).attr("href");

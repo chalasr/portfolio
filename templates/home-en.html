@@ -51,12 +51,14 @@
         </div>
         <div class="timeline-body">
           <p>
-            Lead Developer <b>[ Symfony / AngularJS ]</b><br>
+            Lead Developer <b>Symfony / AngularJS</b><br>
             69003 LYON - France<br>
             <b>Web@cadémie </b>- Epitech <br>
             Driver license<br>
-            <a id="dlcv" target="_blank" href="/assets/cv/cv-en.pdf"> My C.V. in PDF format !</a>
-            <br><br>
+            <a class="head-link" target="_blank" href="/assets/cv/cv-en.pdf"> C.V. in PDF format</a>
+            <br>
+            <a class="head-link" target="_blank" href="http://chalasr.github.io">Technical blog</a>
+            <br>
           </p>
         </div>
       </div>
@@ -478,156 +480,65 @@
   <hr>
   <h3 class="worksh3">WORKS</h3>
   <a href="#" name="portfolio"></a>
-  <ul class="timeline">
-    <li  >
-      <div class="no-after timeline-panel work" id="webrtconf">
-        <div class="caption">
-          <div class="card">
-            <div class="card-content white-text">
-              <span class="card-title">WebRTConf</span>
-              <p>
-                Multi-User Video/Audio Conference App' built with Express, AngularJS & WebRTC
-              </p>
-              <div class="btn-floating waves-effect waves-light technos grey">
-                <span class="devicons devicons-nodejs_small"></span>
-              </div>
-              <div class="btn-floating waves-effect waves-light technos grey">
-                <span class="devicons devicons-angular"></span>
-              </div>
-              <div class="showprod">
-                <a target="_blank" href="http://github.com/chalasr/WebRTConf" class="waves-effect waves-light btn showproj grey">Source</a>
-                <a target="_blank" href="https://chalas-rtc.herokuapp.com" class="waves-effect waves-light btn showproj grey">Demo</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <ul class="timeline projects-list">
+    <li>
+      <project
+        name="'WebRTConf'"
+        description="'Multi-User Video/Audio Conference app built with Express, AngularJS and WebRTC'"
+        tools="['nodejs_small', 'angular']"
+        demo="'https://chalas-rtc.herokuapp.com'"
+        source="'https://github.com/chalasr/webrtconf'"
+      />
     </li>
     <li class="timeline-inverted">
-      <div class="no-after timeline-panel work" id="workmanager">
-        <div class="caption">
-          <div class="card">
-            <div class="card-content white-text">
-              <span class="card-title">WorkManager</span>
-              <p>
-                Trello like web app built with Symfony2. <br>
-                Project management for team working with lists, cards, checklists and tasks.
-              </p>
-              <div class="btn-floating waves-effect waves-light technos grey">
-                <span class="devicons devicons-symfony"></span>
-              </div>
-              <div class="btn-floating waves-effect waves-light technos grey">
-                <span class="devicons devicons-angular"></span>
-              </div>
-              <div class="showprod">
-                <a target="_blank" href="http://github.com/chalasr/WorkManager" class="waves-effect waves-light btn showproj grey">Source</a>
-                <a target="_blank" href="http://workmanager.chalasdev.fr" class="waves-effect waves-light btn showproj grey">Demo</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <project
+        name="'WorkManager'"
+        description="'Trello like web app built with Symfony2. \
+        Project management for team working with lists, cards, checklists and tasks.'"
+        tools="['symfony', 'angular']"
+        demo="'http://workmanager.chalasdev.fr'"
+        source="'http://github.com/chalasr/WorkManager'"
+      />
     </li>
     <li>
-      <div class="no-after timeline-panel work" id="mymaps">
-        <div class="caption">
-          <div class="card">
-            <div class="card-content white-text">
-              <span class="card-title">Traveler</span>
-              <p>
-                Web project using Google Maps API. <br>
-                Choose your itineraries by tourist activies, for walking, biking and driving.
-              </p>
-              <div class="btn-floating waves-effect waves-light technos grey">
-                <span class="devicons devicons-javascript"></span>
-              </div>
-              <div class="btn-floating waves-effect waves-light technos grey">
-                <span class="devicons devicons-chrome"></span>
-              </div>
-              <div class="showprod">
-                <a target="_blank" href="http://github.com/chalasr/traveler" class="waves-effect waves-light btn showproj grey">Source</a>
-                <a target="_blank" href="http://maps.chalasdev.fr" class="waves-effect waves-light btn showproj grey">Demo</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <project
+        name="'Traveler'"
+        description="'Web project using Google Maps API. \
+        Choose your itineraries by tourist activies, for walking, biking and driving.'"
+        tools="['javascript', 'chrome']"
+        demo="'http://maps.chalasdev.fr'"
+        source="'http://github.com/chalasr'"
+      />
     </li>
     <li class="timeline-inverted" id="block10">
-      <!-- <div class="btn-floating btn-large waves-effect waves-light timeline-badge" style="margin-top: -94px;"><span id="icjava" class="devicons devicons-javascript"></span></div> -->
-      <div class="no-after timeline-panel work" id="flaskp2p">
-        <div class="caption">
-          <div class="card">
-            <div class="card-content white-text">
-              <span class="card-title">Flask P2P</span>
-              <p>
-                <p>
-                   Messaging peer to peer web interface multi-room. <br>
-                   Client AngularJS / WebRTC on server written in Python.
-                </p>
-              </p>
-              <div class="btn-floating waves-effect waves-light technos grey">
-                <span class="devicons devicons-python"></span>
-              </div>
-              <div class="btn-floating waves-effect waves-light technos grey">
-                <span class="devicons devicons-angular"></span>
-              </div>
-              <div class="showprod">
-                <a target="_blank" href="http://github.com/chalasr/Flask-P2P" class="waves-effect waves-light btn showproj grey">Source</a>
-                <a target="_blank" href="http://flask-p2p.chalasdev.fr" class="waves-effect waves-light btn showproj grey">Demo</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <project
+        name="'Flask P2P'"
+        description="'Messaging peer to peer web interface multi-room. \
+        Client AngularJS / WebRTC on server written in Python.'"
+        tools="['python', 'angular']"
+        demo="'http://flask-p2p.chalasdev.fr'"
+        source="'http://github.com/chalasr/flask-p2p'"
+      />
     </li>
-
     <li>
-      <div class="no-after timeline-panel work" id="cloudwac">
-        <div class="caption">
-          <div class="card">
-            <div class="card-content white-text">
-              <span class="card-title">CloudWac</span>
-              <p>
-                  A Cloud web application built on Laravel. <br>
-                  File upload, sharing and downloading.
-              </p>
-              <div class="btn-floating waves-effect waves-light technos grey">
-                <span class="devicons devicons-laravel"></span>
-              </div>
-              <div class="showprod">
-                <a target="_blank" href="https://github.com/chalasr/Cloud-L4" class="waves-effect waves-light btn showproj grey">Source</a>
-                <a target="_blank" href="http://cloud.chalasdev.fr/" class="waves-effect waves-light btn showproj grey">Demo</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <project
+        name="'CloudWac'"
+        description="'A Cloud web application built on Laravel. \
+          File upload, sharing and downloading.'"
+        tools="['laravel']"
+        demo="'http://cloud.chalasdev.fr'"
+        source="'http://github.com/chalasr/cloud-l4'"
+      />
     </li>
     <li class="timeline-inverted" id="block4">
-      <div class="no-after timeline-panel work" id="ateliermac">
-        <div class="caption">
-          <div class="card">
-            <div class="card-content white-text">
-              <span class="card-title">L'Atelier Mac</span>
-              <p>
-                Project for my dad, Apple hardware technician <i class="fa fa-apple"></i>.<br>
-                Repair, purchase and sell Apple products.
-              </p>
-              <div class="btn-floating waves-effect waves-light technos grey">
-                <span class="devicons devicons-laravel"></span>
-              </div>
-              <div class="btn-floating waves-effect waves-light technos grey">
-                <span class="devicons devicons-angular"></span>
-              </div>
-              <div class="showprod">
-                <a target="_blank" href="http://github.com/chalasr/Laravel_AngularJS_LatelierMac" class="waves-effect waves-light btn showproj grey">Source</a>
-                <a target="_blank" href="http://www.lateliermac.com/" class="waves-effect waves-light btn showproj grey">Demo</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <project
+        name="'Atelier Mac'"
+        description="'Project for my dad, Apple hardware technician \
+        Repair, purchase and sell Apple products.'"
+        tools="['laravel', 'angular']"
+        demo="'http://www.lateliermac.com'"
+        source="'http://github.com/chalasr/lateliermac'"
+      />
     </li>
   </ul>
   <hr>
