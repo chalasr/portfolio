@@ -16,7 +16,7 @@
             '<div class="card">' +
               '<div class="card-content white-text">' +
                 '<span class="card-title">{{ name }}</span>' +
-                '<p>{{ description }}</p>' +
+                '<p class="description">{{ description }}</p>' +
                 '<div ng-repeat="tool in tools" class="btn-floating waves-effect waves-light technos grey">' +
                   '<span class="devicons devicons-{{ tool }}"></span>' +
                 '</div>' +
