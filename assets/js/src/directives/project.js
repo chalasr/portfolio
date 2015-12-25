@@ -1,5 +1,5 @@
 (function(app) {
-  function ProjectBlock($compile, $rootScope) {
+  function ProjectBlock($compile) {
     return {
       restrict: 'E',
       replace: true,
