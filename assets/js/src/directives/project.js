@@ -33,7 +33,6 @@
             if (!$rootScope.javascriptLoaded) {
                 $rootScope.loadJavascripts();
                 $rootScope.javascriptLoaded = true;
-                console.log('js loaded');
             }
           }, 1000);
       },
