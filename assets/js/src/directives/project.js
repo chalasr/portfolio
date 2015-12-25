@@ -4,11 +4,11 @@
       restrict: 'E',
       replace: true,
       scope: {
-        name:   '=',
+        name:   '@',
         description: '=',
         tools:  '=',
-        demo:   '=',
-        source: '=',
+        demo:   '@',
+        source: '@',
       },
       template:
         '<div class="no-after timeline-panel work" id="{{ name | lower | trim }}">' +
