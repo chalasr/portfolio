@@ -1,5 +1,5 @@
 (function(app) {
-  function ProjectBlock($compile) {
+  function ProjectBlock($timeout, $rootScope) {
     return {
       restrict: 'E',
       replace: true,
@@ -29,7 +29,13 @@
           '</div>' +
         '</div>',
       link: function(scope, element,attrs) {
-         $compile(element)(scope);
+          $timeout(function() {
+            if (!$rootScope.javascriptLoaded) {
+                $rootScope.loadJavascripts();
+                $rootScope.javascriptLoaded = true;
+                console.log('js loaded');
+            }
+          }, 1000);
       },
     };
   };

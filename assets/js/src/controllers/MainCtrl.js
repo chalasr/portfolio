@@ -1,6 +1,7 @@
 (function(app) {
 
     function MainCtrl($rootScope) {
+        $rootScope.javascriptLoaded = false;
         $rootScope.loadJavascripts = function() {
             $("a[href^=#]").click(function() {
                 var cible, hauteur;
