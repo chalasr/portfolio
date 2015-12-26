@@ -1,8 +1,9 @@
 (function(app) {
-  function ProjectBlock($timeout, $rootScope) {
+  function ProjectBlock($timeout) {
     return {
       restrict: 'E',
       replace: true,
+      controller: 'MainCtrl as main',
       scope: {
         name:   '@',
         description: '=',
@@ -29,12 +30,13 @@
           '</div>' +
         '</div>',
       link: function(scope, element,attrs) {
-          $timeout(function() {
-            if (!$rootScope.javascriptLoaded) {
-                $rootScope.loadJavascripts();
-                $rootScope.javascriptLoaded = true;
-            }
-          }, 1000);
+        var main = element.controller();
+        $timeout(function() {
+          if (!main.javascriptLoaded) {
+            main.loadJavascripts();
+            main.javascriptLoaded = true;
+          }
+        }, 1000);
       },
     };
   };

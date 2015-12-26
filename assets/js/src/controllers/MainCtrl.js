@@ -2,8 +2,8 @@
 
     function MainCtrl($rootScope) {
         var self = this;
-        $rootScope.javascriptLoaded = false;
-        $rootScope.loadJavascripts = function() {
+        self.javascriptLoaded = false;
+        self.loadJavascripts = function() {
             $("a[href^=#]").click(function() {
                 var cible, hauteur;
                 cible = $(this).attr("href");
@@ -74,6 +74,7 @@
             $('input, textarea').on('blur', function() {
                 $('label[for='+ $(this).attr('id') +']').removeClass('active');
             });
+            console.log('javascripts loaded')
         };
 
         this.getToolByClassName = function(str) {
