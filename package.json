@@ -14,8 +14,6 @@
     "gulp-util": "^3.0.7",
     "gulp-webserver": "^0.9.1",
     "http": "^0.0.0",
-    "karma-mocha": "^0.2.1",
-    "mocha": "^2.3.4",
     "phantomjs": "^1.9.19"
   },
   "devDependencies": {
