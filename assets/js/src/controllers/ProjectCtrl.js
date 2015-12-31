@@ -1,5 +1,5 @@
 (function(app) {
-    function ProjectCtrl() {
+    function ProjectCtrl($rootScope) {
         this.projects = [
             {
               name: 'WebRTConf',
@@ -9,6 +9,8 @@
               source: 'https://chalas-rtc.herokuapp.com',
             },
         ];
+
+        $rootScope.status = 'ready';
     };
     app.controller('ProjectCtrl', ProjectCtrl);
 })(angular.module('portfolio'));
