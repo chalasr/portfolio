@@ -3,7 +3,24 @@
     function MainCtrl($rootScope) {
         var self = this;
         self.javascriptLoaded = false;
-        self.loadJavascripts = function() {
+        self.showModal = false;
+
+        self.openModal = function() {
+            self.showModal = true;
+            $('#profileModal').modal('show');
+            $(".modal-backdrop").on('click', function() {
+                 console.log('close modal');
+                 self.closeModal();
+            });
+            console.log('show modal');
+        };
+
+        this.closeModal = function() {
+            self.showModal = false;
+            $('#profileModal').modal('hide');
+        };
+
+        this.loadJavascripts = function() {
             $("a[href^=#]").click(function() {
                 var cible, hauteur;
                 cible = $(this).attr("href");

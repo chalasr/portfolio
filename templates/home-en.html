@@ -12,7 +12,7 @@
     <a style="float:right" class="trans" ui-sref="homefr"><span class="flag-icon flag-icon-fr"></span></a>
     <div class="col-sm-4 col-md-4 user-details infohead">
       <div class="user-image">
-        <img src="/assets/img/profil.JPG" alt="Robin CHALAS" title="Développeur web fullstack" class="img-rounded  imgprof">
+      <img ng-click="main.openModal()" src="/assets/img/profil.JPG" alt="Robin CHALAS" title="Robin Chalas" class="img-rounded imgprof">
       </div>
       <div class="user-info-block">
         <div class="user-heading">
@@ -607,4 +607,7 @@
         </div>
     </div>
   </footer>
+  <picture-modal visible="{{ main.showModal }}">
+    <img ng-click="main.openModal()" class="imgprof-full" src="/assets/img/profile-full.JPG" alt="Robin CHALAS" title="Robin Chalas">
+  </picture-modal>
   </div>
