@@ -5,7 +5,7 @@
         self.javascriptLoaded = false;
         self.showModal = false;
 
-        self.openModal = function() {
+        this.openModal = function() {
             self.showModal = true;
             $('#profileModal').modal('show');
             $(".modal-backdrop").on('click', function() {
