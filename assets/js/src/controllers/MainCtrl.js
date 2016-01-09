@@ -91,7 +91,7 @@
             $('input, textarea').on('blur', function() {
                 $('label[for='+ $(this).attr('id') +']').removeClass('active');
             });
-            console.log('javascripts loaded')
+            console.log('javascripts loaded');
         };
 
         this.getToolByClassName = function(str) {
